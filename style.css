@@ -13,6 +13,8 @@
 body {
     background-color: var(--primary-color);
     color: var(--white--color);
+    margin: 0;
+    padding: 0;
 }
 
 /* Home Section CSS */
@@ -21,12 +23,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5vw;
+    padding: 5px 5vw;
 }
 
-#brand {
-    font-size: 2vw;
-    font-weight: 600;
+Nav > #brand > img {
+    height: 10vh;
 }
 
 nav > ul {
@@ -52,10 +53,10 @@ nav > ul > li > a > ion-icon:hover {
     transition: 0.5s ease-in-out;
 }
 
-@media (max-width: 730px) { 
+@media (max-width: 280px) { 
 
-    #brand {
-        font-size: 1rem;
+    nav {
+        flex-direction: column;
     }
 
 }
@@ -430,6 +431,7 @@ footer {
     flex-wrap: wrap;
     padding: 10px 3vw;
     background-color: var(--tertiary-color);
+    margin-top: 15px;
 }
 
 .contact {
@@ -445,6 +447,17 @@ footer {
 .whatsapp {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    footer, .contact{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
 }
 
 
