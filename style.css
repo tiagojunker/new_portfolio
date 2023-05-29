@@ -53,10 +53,18 @@ nav > ul > li > a > ion-icon:hover {
     transition: 0.5s ease-in-out;
 }
 
-@media (max-width: 280px) { 
+@media (max-width: 300px) { 
 
-    nav {
-        flex-direction: column;
+    #logo {
+        height: 5vh;
+    }
+
+    nav > ul > li > a {
+        width: 3vh;
+    }
+    
+    nav > ul > li > a > ion-icon {
+        width: 15px;
     }
 
 }
